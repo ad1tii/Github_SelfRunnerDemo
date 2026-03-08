@@ -19,7 +19,7 @@ jobs:
     # You can also add labels like [self-hosted, Windows, python]
     # that you set when registering your runner.
     # ---------------------------------------------------------------
-    runs-on: [self-hosted, windows, x64]
+    runs-on: self-hosted
     steps:
       # Step 1: Check out the repository code onto the runner machine
       - name: Checkout repository
