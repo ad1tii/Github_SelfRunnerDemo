@@ -1,0 +1,15 @@
+name: Self Hosted Runner Demo
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Print message
+        run: echo "GitHub Self Hosted Runner is working!"
